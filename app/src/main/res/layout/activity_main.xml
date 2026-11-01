@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:paddingBottom="30dp">
 
         <!-- HEADER -->
 
@@ -63,29 +64,19 @@
 
         <LinearLayout
             android:id="@+id/openChat"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="28dp"
-            android:background="@color/surface"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:padding="20dp">
+            style="@style/FeatureCard">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="💬  AI CHAT"
-                android:textColor="@color/blue_light"
-                android:textSize="22sp"
-                android:textStyle="bold"/>
+                style="@style/FeatureIcon"
+                android:text="💬"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Бо зеҳни сунъӣ суҳбат кун"
-                android:textColor="@color/white"
-                android:textSize="14sp"/>
+                style="@style/FeatureTitle"
+                android:text="AI CHAT"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Бо зеҳни сунъӣ суҳбат кун"/>
 
         </LinearLayout>
 
@@ -100,7 +91,7 @@
             android:textSize="21sp"
             android:textStyle="bold"/>
 
-        <!-- FEATURE 1 -->
+        <!-- TRANSLATOR -->
 
         <LinearLayout
             android:id="@+id/openTranslator"
@@ -120,7 +111,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 2 -->
+        <!-- WRITER -->
 
         <LinearLayout
             android:id="@+id/openWriter"
@@ -140,7 +131,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 3 -->
+        <!-- STUDY -->
 
         <LinearLayout
             android:id="@+id/openStudy"
@@ -160,7 +151,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 4 -->
+        <!-- QUESTIONS -->
 
         <LinearLayout
             android:id="@+id/openQuestions"
@@ -180,7 +171,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 5 -->
+        <!-- IMAGE ANALYZER -->
 
         <LinearLayout
             android:id="@+id/openImage"
@@ -200,7 +191,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 6 -->
+        <!-- PDF READER -->
 
         <LinearLayout
             android:id="@+id/openPDF"
@@ -220,7 +211,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 7 -->
+        <!-- CODE ASSISTANT -->
 
         <LinearLayout
             android:id="@+id/openCode"
@@ -240,7 +231,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 8 -->
+        <!-- TEXT EDITOR -->
 
         <LinearLayout
             android:id="@+id/openEditor"
@@ -260,7 +251,7 @@
 
         </LinearLayout>
 
-        <!-- FEATURE 9 -->
+        <!-- MATH SOLVER -->
 
         <LinearLayout
             android:id="@+id/openMath"
@@ -280,7 +271,7 @@
 
         </LinearLayout>
 
-        <!-- HISTORY -->
+        <!-- CHAT HISTORY -->
 
         <LinearLayout
             android:id="@+id/openHistory"
@@ -300,7 +291,26 @@
 
         </LinearLayout>
 
+        <!-- USER PROFILE -->
+
+        <LinearLayout
+            android:id="@+id/openProfile"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="👤"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="User Profile"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Профил ва маълумоти корбар"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>
-              
