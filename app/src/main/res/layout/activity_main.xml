@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TAJIK AI"
+                android:textColor="@color/blue_light"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/onlineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● ONLINE"
+                android:textColor="@color/success"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- WELCOME -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Салом! 👋"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ман TAJIK AI ҳастам. Чӣ кӯмак расонам?"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"/>
+
+        <!-- AI CHAT -->
+
+        <LinearLayout
+            android:id="@+id/openChat"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/surface"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💬  AI CHAT"
+                android:textColor="@color/blue_light"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Бо зеҳни сунъӣ суҳбат кун"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <!-- FEATURES TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Функсияҳои AI"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <!-- FEATURE 1 -->
+
+        <LinearLayout
+            android:id="@+id/openTranslator"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="🌐"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Translator"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Тарҷумаи забонҳо"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 2 -->
+
+        <LinearLayout
+            android:id="@+id/openWriter"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="✍️"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Writer"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Навиштани матн ва иншо"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 3 -->
+
+        <LinearLayout
+            android:id="@+id/openStudy"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="📚"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Study Assistant"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Ёрӣ дар омӯзиш"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 4 -->
+
+        <LinearLayout
+            android:id="@+id/openQuestions"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="🧠"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Questions"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Ҷавоб ба саволҳо"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 5 -->
+
+        <LinearLayout
+            android:id="@+id/openImage"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="🖼️"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Image Analyzer"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Таҳлили сурат"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 6 -->
+
+        <LinearLayout
+            android:id="@+id/openPDF"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="📄"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI PDF Reader"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Хондан ва таҳлили PDF"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 7 -->
+
+        <LinearLayout
+            android:id="@+id/openCode"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="💻"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Code Assistant"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Навиштан ва фаҳмондани код"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 8 -->
+
+        <LinearLayout
+            android:id="@+id/openEditor"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="📝"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Text Editor"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Ислоҳ ва беҳтар кардани матн"/>
+
+        </LinearLayout>
+
+        <!-- FEATURE 9 -->
+
+        <LinearLayout
+            android:id="@+id/openMath"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="🔢"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="AI Math Solver"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Кӯмак дар математика"/>
+
+        </LinearLayout>
+
+        <!-- HISTORY -->
+
+        <LinearLayout
+            android:id="@+id/openHistory"
+            style="@style/FeatureCard">
+
+            <TextView
+                style="@style/FeatureIcon"
+                android:text="📜"/>
+
+            <TextView
+                style="@style/FeatureTitle"
+                android:text="Chat History"/>
+
+            <TextView
+                style="@style/FeatureDescription"
+                android:text="Таърихи суҳбатҳо"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+              
