@@ -10,46 +10,63 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp"
-        android:paddingBottom="30dp">
+        android:padding="20dp">
 
-        <!-- HEADER -->
+        <!-- LOGO -->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:src="@drawable/tajik_ai_logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="TAJIK AI Logo"/>
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TAJIK AI"
-                android:textColor="@color/blue_light"
-                android:textSize="28sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/onlineStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="● ONLINE"
-                android:textColor="@color/success"
-                android:textSize="12sp"
+                android:text="TAJIK AI"
+                android:textColor="@color/blue_light"
+                android:textSize="30sp"
                 android:textStyle="bold"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зеҳни сунъии тоҷикӣ"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"/>
+
         </LinearLayout>
+
+        <!-- ONLINE STATUS -->
+
+        <TextView
+            android:id="@+id/onlineStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="● ONLINE"
+            android:textColor="@color/success"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
 
         <!-- WELCOME -->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:text="Салом! 👋"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="28sp"
             android:textStyle="bold"/>
 
         <TextView
@@ -64,7 +81,9 @@
 
         <LinearLayout
             android:id="@+id/openChat"
-            style="@style/FeatureCard">
+            style="@style/FeatureCard"
+            android:layout_marginTop="25dp"
+            android:background="@color/blue_dark">
 
             <TextView
                 style="@style/FeatureIcon"
@@ -72,11 +91,13 @@
 
             <TextView
                 style="@style/FeatureTitle"
-                android:text="AI CHAT"/>
+                android:text="AI CHAT"
+                android:textColor="@color/white"/>
 
             <TextView
                 style="@style/FeatureDescription"
-                android:text="Бо зеҳни сунъӣ суҳбат кун"/>
+                android:text="Бо зеҳни сунъӣ суҳбат кун"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -86,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Функсияҳои AI"
+            android:text="ФУНКСИЯҲОИ AI"
             android:textColor="@color/white"
             android:textSize="21sp"
             android:textStyle="bold"/>
@@ -311,6 +332,19 @@
 
         </LinearLayout>
 
+        <!-- FOOTER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="TAJIK AI © 2026"
+            android:textColor="@color/gray"
+            android:textSize="12sp"/>
+
     </LinearLayout>
 
 </ScrollView>
+            
