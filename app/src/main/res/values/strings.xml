@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TAJIK AI</string>
+    <string name="app_subtitle">Зеҳни сунъии тоҷикӣ</string>
+
+    <string name="welcome_title">Салом! Хуш омадӣ</string>
+    <string name="welcome_message">Ман TAJIK AI ҳастам. Чӣ кӯмак расонам?</string>
+
+    <string name="chat">Чати нав</string>
+    <string name="translator">Тарҷумон</string>
+    <string name="writer">Навиштани матн</string>
+    <string name="study">Ёрӣ дар дарсҳо</string>
+    <string name="questions">Саволу ҷавоб</string>
+
+    <string name="image_analyzer">Таҳлили сурат</string>
+    <string name="pdf_reader">Хонандаи PDF</string>
+    <string name="code_assistant">Ёрдамчии код</string>
+    <string name="text_editor">Муҳаррири матн</string>
+    <string name="math_solver">Ҳалли масъалаҳои математикӣ</string>
+
+    <string name="history">Таърихи суҳбатҳо</string>
+    <string name="profile">Профил</string>
+    <string name="settings">Танзимот</string>
+
+    <string name="send">Ирсол</string>
+    <string name="message_hint">Саволи худро навис...</string>
+    <string name="loading">Лутфан интизор шавед...</string>
+    <string name="online">Онлайн</string>
+
+</resources>
